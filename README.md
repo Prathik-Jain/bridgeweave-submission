@@ -7,8 +7,9 @@ Tech used:
 - Next JS (React + Drizzle + Tailwind + shadcn UI)
 - Postgres
 
---
-What's missing:
+---
+
+### What's missing:
 
 - Frontend Validations
 - Test
@@ -16,8 +17,9 @@ What's missing:
 - more filtering options (would be similar to location filter in case of the states being pulled to the url)
 - Pagination (show only top 12 hotels)
 
---
-What's included
+---
+
+### What's included
 
 - Full expected functionality
   - Hotel listing
@@ -26,6 +28,7 @@ What's included
 - Backend validations for not booking on same dates
 - Responsiveness
 - React Server components ✨
+- Data from database
 
 Steps to Run
 
