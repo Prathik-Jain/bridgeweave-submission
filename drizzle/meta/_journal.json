@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1706209657278,
+      "tag": "0000_swift_typhoid_mary",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1706209659543,
+      "tag": "0001_nervous_hellion",
+      "breakpoints": true
+    }
+  ]
+}

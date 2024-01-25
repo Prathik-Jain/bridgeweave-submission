@@ -1,0 +1,164 @@
+{
+  "id": "b50e40d7-c4b6-494c-8eb7-c3b3abf66425",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "5",
+  "dialect": "pg",
+  "tables": {
+    "hotel": {
+      "name": "hotel",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigint",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "featured_image": {
+          "name": "featured_image",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "location": {
+          "name": "location",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "rate": {
+          "name": "rate",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "star_rating": {
+          "name": "star_rating",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "hotel_name_idx": {
+          "name": "hotel_name_idx",
+          "columns": [
+            "name"
+          ],
+          "isUnique": false
+        },
+        "hotel_star_rating_idx": {
+          "name": "hotel_star_rating_idx",
+          "columns": [
+            "star_rating"
+          ],
+          "isUnique": false
+        },
+        "hotel_location_idx": {
+          "name": "hotel_location_idx",
+          "columns": [
+            "location"
+          ],
+          "isUnique": false
+        },
+        "hotel_rate_idx": {
+          "name": "hotel_rate_idx",
+          "columns": [
+            "rate"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "reservation": {
+      "name": "reservation",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigint",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "hotel_id": {
+          "name": "hotel_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "guest_name": {
+          "name": "guest_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "total_amount": {
+          "name": "total_amount",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "check_in": {
+          "name": "check_in",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "check_out": {
+          "name": "check_out",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "reservation_hotel_id_idx": {
+          "name": "reservation_hotel_id_idx",
+          "columns": [
+            "hotel_id"
+          ],
+          "isUnique": false
+        },
+        "reservation_hotel_check_in": {
+          "name": "reservation_hotel_check_in",
+          "columns": [
+            "check_in"
+          ],
+          "isUnique": false
+        },
+        "reservation_hotel_check_out": {
+          "name": "reservation_hotel_check_out",
+          "columns": [
+            "check_out"
+          ],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
