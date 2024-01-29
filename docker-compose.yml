@@ -21,7 +21,7 @@ services:
 
   web:
     build: .
-    command: bash -c 'npm run build && npm start'
+    command: bash -c 'npm run generate && npm run migrate && npm run build && npm start'
     depends_on:
       - db
     ports:

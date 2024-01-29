@@ -35,5 +35,13 @@ Steps to Run
 It's assumed that you have docker installed.
 
 ```
-docker compose --env-file .env.local up
+docker compose --env-file .env.local up --build
 ```
+
+wait until you see
+
+```
+Local: http://localhost:3000
+```
+
+the site will be up on the same site.

@@ -6,8 +6,10 @@
   "target": "es2017",
   "scripts": {
     "dev": "next dev",
+    "generate": "npx drizzle-kit generate:pg",
+    "migrate": "npx tsx src/lib/drizzle/migrate.ts",
     "build": "next build",
-    "start": "npx tsx src/lib/drizzle/migrate.ts && next start",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
