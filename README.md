@@ -44,4 +44,4 @@ wait until you see
 Local: http://localhost:3000
 ```
 
-the site will be up on the same site.
+the site will be up on the same url.
